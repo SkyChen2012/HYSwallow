@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "HYSwallowNet"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "My HYSwallowNet."
 
   # This description is used to generate tags and improve search results.
@@ -93,22 +93,16 @@ Pod::Spec.new do |s|
 
   s.source_files  = "HYSwallow", "HYSwallowNet/*.{m,h}"
 
-  s.subspec 'Category' do |category|
-        category.source_files = 'HYSwallowNet/Category/**.{h,m}'
-        category.public_header_files = "HYSwallowNet/Category/**.h"
-  end
-  s.subspec 'Base' do |base|
-        base.source_files = 'HYSwallowNet/Base/*'
-  end
-  s.subspec 'BoneAddress' do |boneAddress|
-        boneAddress.source_files = 'HYSwallowNet/BoneAddress/*'
-  end
-  s.subspec 'AccountService' do |accountService|
-        accountService.source_files = 'HYSwallowNet/AccountService/*'
-  end
-  s.subspec 'UserService' do |userService|
-        userService.source_files = 'HYSwallowNet/UserService/*'
-  end
+  # s.subspec 'Category' do |category|
+  #       category.source_files = 'HYSwallowNet/Category/**.{h,m}'
+  #       category.public_header_files = "HYSwallowNet/Category/**.h"
+  # end
+  # s.subspec 'Base' do |base|
+  #       base.source_files = 'HYSwallowNet/Base/*'
+  # end
+  # s.subspec 'AccountService' do |accountService|
+  #       accountService.source_files = 'HYSwallowNet/AccountService/*'
+  # end
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -150,7 +144,5 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  s.dependency "HeroinNetworking", "~> 0.2.3"
-  s.dependency "AFNetworking", "~> 3.2.1"
-
+  s.dependency "HeroinNetworking", "~> 0.2.4"
 end

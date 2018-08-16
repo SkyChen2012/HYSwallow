@@ -109,7 +109,6 @@
 		46CC00B0212523150068A4C2 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		46CC00B2212533620068A4C2 /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
 		46CC00B3212533620068A4C2 /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
-		46CC00B5212545950068A4C2 /* HYSwallowNet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYSwallowNet.h; sourceTree = "<group>"; };
 		606BA32545600A255DF092E8 /* Pods-HYSwallowUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HYSwallowUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HYSwallowUITests/Pods-HYSwallowUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7CCDE458F91C68843EAD960D /* Pods-HYSwallowTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HYSwallowTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HYSwallowTests/Pods-HYSwallowTests.debug.xcconfig"; sourceTree = "<group>"; };
 		98F6FFABF68757E07EDF097C /* Pods-HYSwallow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HYSwallow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HYSwallow/Pods-HYSwallow.debug.xcconfig"; sourceTree = "<group>"; };
@@ -204,7 +203,6 @@
 				4620D63E21243A09009D11F8 /* BoneAddress */,
 				4620D63421243517009D11F8 /* AccountService */,
 				46CC008E212509D80068A4C2 /* UserService */,
-				46CC00B5212545950068A4C2 /* HYSwallowNet.h */,
 			);
 			path = HYSwallowNet;
 			sourceTree = "<group>";

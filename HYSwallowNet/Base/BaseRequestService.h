@@ -7,7 +7,6 @@
 //
 
 #import "HeroinRequest.h"
-#import "HeroinNetworking.h"
 #import "TargetConfigContants.h"
 //#import "AFNetworking.h"
 @interface BaseRequestService : HeroinRequest
