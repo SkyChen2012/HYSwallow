@@ -94,19 +94,19 @@ Pod::Spec.new do |s|
   s.source_files  = "HYSwallowNet", "HYSwallowNet/*"
 
   s.subspec 'Category' do |category|
-        foundation.source_files = 'HYSwallowNet/Category/*'
+        category.source_files = 'HYSwallowNet/Category/*'
     end
-  s.subspec 'Base' do |Base|
-        foundation.source_files = 'HYSwallowNet/Base/*'
+  s.subspec 'Base' do |base|
+        base.source_files = 'HYSwallowNet/Base/*'
     end
   s.subspec 'BoneAddress' do |boneAddress|
-        foundation.source_files = 'HYSwallowNet/BoneAddress/*'
+        boneAddress.source_files = 'HYSwallowNet/BoneAddress/*'
     end
   s.subspec 'AccountService' do |accountService|
-        foundation.source_files = 'HYSwallowNet/AccountService/*'
+        accountService.source_files = 'HYSwallowNet/AccountService/*'
     end
   s.subspec 'UserService' do |userService|
-        foundation.source_files = 'HYSwallowNet/UserService/*'
+        userService.source_files = 'HYSwallowNet/UserService/*'
     end
   # s.exclude_files = "Classes/Exclude"
 
