@@ -6,6 +6,8 @@
 //  Copyright © 2018年 Benson. All rights reserved.
 //
 
+#include <Foundation/Foundation.h>
+
 #ifndef TargetConfigContants_h
 #define TargetConfigContants_h
 

@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "HYSwallowNet"
-  s.version      = "0.0.6"
+  s.version      = "0.0.7"
   s.summary      = "My HYSwallowNet."
 
   # This description is used to generate tags and improve search results.
@@ -98,7 +98,7 @@ Pod::Spec.new do |s|
   #       category.public_header_files = "HYSwallowNet/Category/**.h"
   # end
   s.subspec 'Base' do |base|
-        base.source_files = 'HYSwallowNet/Base/*'
+        base.source_files = 'HYSwallowNet/Base/**.{m,h}'
   end
   # s.subspec 'AccountService' do |accountService|
   #       accountService.source_files = 'HYSwallowNet/AccountService/*'
@@ -143,6 +143,7 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
-  s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  s.dependency "HeroinNetworking", "~> 0.2.4"
+  # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
+  s.dependency "HeroinNetworking", "~> 0.2.3"
+  s.dependency "AFNetworking", "~> 3.2.1"
 end
