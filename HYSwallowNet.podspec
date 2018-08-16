@@ -16,8 +16,8 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "HYSwallowNet"
-  s.version      = "0.0.2"
-  s.summary      = "A short description of HYSwallowNet."
+  s.version      = "0.0.3"
+  s.summary      = "My HYSwallowNet."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-                    here is description. honyar Net
+                    here is description honyar Net.
                    DESC
 
   s.homepage     = "https://skychen2012.github.io"
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/SkyChen2012/HYSwallowNet.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/SkyChen2012/HYSwallow.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,23 +91,24 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "HYSwallowNet", "HYSwallowNet/*"
+  s.source_files  = "HYSwallow", "HYSwallowNet/*.{m,h}"
 
   s.subspec 'Category' do |category|
-        category.source_files = 'HYSwallowNet/Category/*'
-    end
+        category.source_files = 'HYSwallowNet/Category/**.{h,m}'
+        category.public_header_files = "HYSwallowNet/Category/**.h"
+  end
   s.subspec 'Base' do |base|
         base.source_files = 'HYSwallowNet/Base/*'
-    end
+  end
   s.subspec 'BoneAddress' do |boneAddress|
         boneAddress.source_files = 'HYSwallowNet/BoneAddress/*'
-    end
+  end
   s.subspec 'AccountService' do |accountService|
         accountService.source_files = 'HYSwallowNet/AccountService/*'
-    end
+  end
   s.subspec 'UserService' do |userService|
         userService.source_files = 'HYSwallowNet/UserService/*'
-    end
+  end
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -146,9 +147,10 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # s.requires_arc = true
+  s.requires_arc = true
 
-  # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
+  s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   s.dependency "HeroinNetworking", "~> 0.2.3"
+  s.dependency "AFNetworking", "~> 3.2.1"
 
 end

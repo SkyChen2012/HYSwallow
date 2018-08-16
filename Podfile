@@ -6,7 +6,7 @@ target 'HYSwallow' do
   # use_frameworks!
 
   # Pods for HYSwallow
-pod 'HeroinNetworking', '~> 0.2.3'
+pod 'HeroinNetworking', '~> 0.2.4'
   target 'HYSwallowTests' do
     inherit! :search_paths
     # Pods for testing

@@ -14,11 +14,11 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - HeroinNetworking (0.2.3):
+  - HeroinNetworking (0.2.4):
     - AFNetworking (~> 3.2.1)
 
 DEPENDENCIES:
-  - HeroinNetworking (~> 0.2.3)
+  - HeroinNetworking (~> 0.2.4)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -27,8 +27,8 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  HeroinNetworking: d00c3a0eac287a9c3c4b5af186576fa736c22e39
+  HeroinNetworking: 455794e9ff4d703d7d83041a6cbca1f05459a687
 
-PODFILE CHECKSUM: de6c4f93b6260d0590a2612222417090dd82a1bc
+PODFILE CHECKSUM: 3367894b860235e0bd6aaf2a8019067cb6ed123b
 
 COCOAPODS: 1.5.3

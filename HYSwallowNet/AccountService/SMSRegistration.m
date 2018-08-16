@@ -44,7 +44,7 @@
 
 - (AFConstructingBlock)constructingBodyBlock {
     return ^(id<AFMultipartFormData> formData) {
-        [formData appendPartWithFormData:[_telephone dataUsingEncoding:NSUTF8StringEncoding] name:@"telephone"];
+        [formData appendPartWithFileData:[_telephone dataUsingEncoding:NSUTF8StringEncoding] name:@"telephone"];
         [formData appendPartWithFormData:[_smsType dataUsingEncoding:NSUTF8StringEncoding]  name:@"smsType"];
     };
 }
