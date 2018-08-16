@@ -11,7 +11,12 @@
 
 #import "BoneAddress.h"
 
-#import "HYSwallowNet.h"
+#import "SMSRegistration.h"
+#import "LogInApi.h"
+#import "RefreshToken.h"
+#import "Register.h"
+#import "ResetLoginPassword.h"
+//#import "HYSwallowNet.h"
 @interface ViewController ()
 
 @property (nonatomic, strong) NSDictionary *userDic;

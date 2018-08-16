@@ -8,6 +8,14 @@
 
 #import "HeroinRequest.h"
 #import "TargetConfigContants.h"
+
+#if __has_include(<AFNetworking/AFNetworking.h>)
+#import <AFNetworking/AFNetworking.h>
+#else
+#import "AFNetworking.h"
+#endif
+
+
 @interface BaseRequestService : HeroinRequest
 
 @end
