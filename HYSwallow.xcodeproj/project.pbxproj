@@ -198,8 +198,10 @@
 		4620D6332124330D009D11F8 /* HYSwallowNet */ = {
 			isa = PBXGroup;
 			children = (
+				4620D63621243647009D11F8 /* BaseRequestService.h */,
+				4620D63721243647009D11F8 /* BaseRequestService.m */,
+				4620D63C212437A9009D11F8 /* TargetConfigContants.h */,
 				46CC0098212514CC0068A4C2 /* Category */,
-				4620D63521243616009D11F8 /* Base */,
 				4620D63E21243A09009D11F8 /* BoneAddress */,
 				4620D63421243517009D11F8 /* AccountService */,
 				46CC008E212509D80068A4C2 /* UserService */,
@@ -222,16 +224,6 @@
 				46CC008C2125079C0068A4C2 /* ResetLoginPassword.m */,
 			);
 			path = AccountService;
-			sourceTree = "<group>";
-		};
-		4620D63521243616009D11F8 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				4620D63621243647009D11F8 /* BaseRequestService.h */,
-				4620D63721243647009D11F8 /* BaseRequestService.m */,
-				4620D63C212437A9009D11F8 /* TargetConfigContants.h */,
-			);
-			path = Base;
 			sourceTree = "<group>";
 		};
 		4620D63E21243A09009D11F8 /* BoneAddress */ = {

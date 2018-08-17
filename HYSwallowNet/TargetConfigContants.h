@@ -13,6 +13,4 @@
 
 static NSString* const TargetConfig_NetWork_s=@"https://wxdev.hongyancloud.com/rest";
 
-
-
 #endif /* TargetConfigContants_h */

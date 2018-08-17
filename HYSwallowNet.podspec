@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "HYSwallowNet"
-  s.version      = "0.0.7"
+  s.version      = "0.0.8"
   s.summary      = "My HYSwallowNet."
 
   # This description is used to generate tags and improve search results.
@@ -93,16 +93,18 @@ Pod::Spec.new do |s|
 
   # s.source_files  = "HYSwallowNet", "HYSwallowNet/*.{m,h}"
 
-  # s.subspec 'Category' do |category|
-  #       category.source_files = 'HYSwallowNet/Category/**.{h,m}'
-  #       category.public_header_files = "HYSwallowNet/Category/**.h"
-  # end
+  s.subspec 'Category' do |category|
+        category.source_files = 'HYSwallowNet/Category/**.{h,m}'
+        category.public_header_files = "HYSwallowNet/Category/**.h"
+  end
   s.subspec 'Base' do |base|
         base.source_files = 'HYSwallowNet/Base/**.{m,h}'
   end
-  # s.subspec 'AccountService' do |accountService|
-  #       accountService.source_files = 'HYSwallowNet/AccountService/*'
-  # end
+  s.subspec 'AccountService' do |accountService|
+        accountService.source_files = 'HYSwallowNet/AccountService/**.{h,m}'
+        accountService.public_header_files = "HYSwallowNet/AccountService/**.h"
+  end
+
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
