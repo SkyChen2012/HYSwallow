@@ -201,6 +201,16 @@
 				4620D63621243647009D11F8 /* BaseRequestService.h */,
 				4620D63721243647009D11F8 /* BaseRequestService.m */,
 				4620D63C212437A9009D11F8 /* TargetConfigContants.h */,
+				4620D639212436B2009D11F8 /* LogInApi.h */,
+				4620D63A212436B2009D11F8 /* LogInApi.m */,
+				46CC0082212502510068A4C2 /* SMSRegistration.h */,
+				46CC0083212502510068A4C2 /* SMSRegistration.m */,
+				46CC0085212503E10068A4C2 /* RefreshToken.h */,
+				46CC0086212503E10068A4C2 /* RefreshToken.m */,
+				46CC0088212505640068A4C2 /* Register.h */,
+				46CC0089212505640068A4C2 /* Register.m */,
+				46CC008B2125079C0068A4C2 /* ResetLoginPassword.h */,
+				46CC008C2125079C0068A4C2 /* ResetLoginPassword.m */,
 				46CC0098212514CC0068A4C2 /* Category */,
 				4620D63E21243A09009D11F8 /* BoneAddress */,
 				4620D63421243517009D11F8 /* AccountService */,
@@ -212,16 +222,6 @@
 		4620D63421243517009D11F8 /* AccountService */ = {
 			isa = PBXGroup;
 			children = (
-				4620D639212436B2009D11F8 /* LogInApi.h */,
-				4620D63A212436B2009D11F8 /* LogInApi.m */,
-				46CC0082212502510068A4C2 /* SMSRegistration.h */,
-				46CC0083212502510068A4C2 /* SMSRegistration.m */,
-				46CC0085212503E10068A4C2 /* RefreshToken.h */,
-				46CC0086212503E10068A4C2 /* RefreshToken.m */,
-				46CC0088212505640068A4C2 /* Register.h */,
-				46CC0089212505640068A4C2 /* Register.m */,
-				46CC008B2125079C0068A4C2 /* ResetLoginPassword.h */,
-				46CC008C2125079C0068A4C2 /* ResetLoginPassword.m */,
 			);
 			path = AccountService;
 			sourceTree = "<group>";
