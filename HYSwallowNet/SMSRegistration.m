@@ -8,14 +8,10 @@
 
 #import "SMSRegistration.h"
 
-@interface SMSRegistration()
-{
+@implementation SMSRegistration{
     __weak NSString *_telephone;
     __weak NSString *_smsType;
 }
-@end
-
-@implementation SMSRegistration
 
 - (id)initWithtelephone:(NSString *)telephone 
                 smsType:(NSString *)smsType{

@@ -40,7 +40,7 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     if (_operateTitleArray && _operateTitleArray.count>0) {
-        NSUInteger row = _operateTitleArray.count%4 == 0 ? _operateTitleArray.count/4:_operateTitleArray.count/4+1;
+//        NSUInteger row = _operateTitleArray.count%4 == 0 ? _operateTitleArray.count/4:_operateTitleArray.count/4+1;
         
         UIView *operateView = [[UIView alloc] initWithFrame:CGRectMake(0, 50, Main_Screen_Width, Main_Screen_Height - 50)];
         

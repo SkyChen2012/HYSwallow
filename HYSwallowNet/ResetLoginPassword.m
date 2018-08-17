@@ -8,15 +8,11 @@
 
 #import "ResetLoginPassword.h"
 
-@interface ResetLoginPassword()
-{
+@implementation ResetLoginPassword{
     __weak NSString *_userName;
     __weak NSString *_code;
     __weak NSString *_password;
 }
-@end
-
-@implementation ResetLoginPassword
 
 - (id)initWithuserName:(NSString *)userName 
                   code:(NSString *)code

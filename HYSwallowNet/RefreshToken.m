@@ -8,14 +8,10 @@
 
 #import "RefreshToken.h"
 
-@interface RefreshToken()
-{
+@implementation RefreshToken{
     __weak NSString *_userId;
     __weak NSString *_token;
 }
-@end
-
-@implementation RefreshToken
 
 - (id)initWithuserId:(NSString *)userId 
                token:(NSString *)token{

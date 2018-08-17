@@ -8,15 +8,11 @@
 
 #import "LogInApi.h"
 
-@interface LogInApi()
-{
+@implementation LogInApi{
     __weak NSString *_authType;
     __weak NSString *_credence;
     __weak NSString *_code;
 }
-@end
-
-@implementation LogInApi
 
 - (id)initWithauthType:(NSString *)authType 
               credence:(NSString *)credence 

@@ -8,8 +8,7 @@
 
 #import "Register.h"
 
-@interface Register()
-{
+@implementation Register{
     __weak NSString *_userName;
     __weak NSString *_code;
     __weak NSString *_password;
@@ -17,11 +16,7 @@
     __weak NSString *_email;
     __weak NSString *_nickName;
     __weak NSString *_gender;
-    
 }
-@end
-
-@implementation Register
 
 - (id)initWithuserName:(NSString *)userName 
                   code:(NSString *)code
