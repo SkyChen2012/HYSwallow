@@ -10,7 +10,11 @@
 
 @implementation BaseRequestService
 
-//公共头部设置
+/**
+ *  @brief  公共头部设置
+ *
+ *  @return headerDictionary 公共头部
+ */
 - (NSDictionary *)requestHeaderFieldValueDictionary
 {
     NSDictionary *headerDictionary=@{@"platform":@"ios",
