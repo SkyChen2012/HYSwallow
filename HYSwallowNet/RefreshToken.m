@@ -40,9 +40,13 @@
 }
 
 - (AFConstructingBlock)constructingBodyBlock {
+    
+    __typeof__(_userId) __weak wuserId = _userId;
+    __typeof__(_token) __weak wtoken = _token;
+    
     return ^(id<AFMultipartFormData> formData) {
-        [formData appendPartWithFormData:[_userId dataUsingEncoding:NSUTF8StringEncoding] name:@"userId"];
-        [formData appendPartWithFormData:[_token dataUsingEncoding:NSUTF8StringEncoding]  name:@"token"];
+        [formData appendPartWithFormData:[wuserId dataUsingEncoding:NSUTF8StringEncoding] name:@"userId"];
+        [formData appendPartWithFormData:[wtoken dataUsingEncoding:NSUTF8StringEncoding]  name:@"token"];
     };
 }
 

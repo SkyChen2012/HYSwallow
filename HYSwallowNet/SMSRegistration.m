@@ -39,9 +39,13 @@
 }
 
 - (AFConstructingBlock)constructingBodyBlock {
+    
+    __typeof__(_telephone) __weak wtelephone = _telephone;
+    __typeof__(_smsType) __weak wsmsType = _smsType;
+    
     return ^(id<AFMultipartFormData> formData) {
-        [formData appendPartWithFormData:[_telephone dataUsingEncoding:NSUTF8StringEncoding] name:@"telephone"];
-        [formData appendPartWithFormData:[_smsType dataUsingEncoding:NSUTF8StringEncoding]  name:@"smsType"];
+        [formData appendPartWithFormData:[wtelephone dataUsingEncoding:NSUTF8StringEncoding] name:@"telephone"];
+        [formData appendPartWithFormData:[wsmsType dataUsingEncoding:NSUTF8StringEncoding]  name:@"smsType"];
     };
 }
 

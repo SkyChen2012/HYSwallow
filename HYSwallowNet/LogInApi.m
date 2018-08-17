@@ -42,10 +42,15 @@
 }
 
 - (AFConstructingBlock)constructingBodyBlock {
+    
+    __typeof__(_authType) __weak wauthType = _authType;
+    __typeof__(_credence) __weak wcredence = _credence;
+    __typeof__(_code) __weak wcode = _code;
+    
     return ^(id<AFMultipartFormData> formData) {
-        [formData appendPartWithFormData:[_authType dataUsingEncoding:NSUTF8StringEncoding] name:@"authType"];
-        [formData appendPartWithFormData:[_credence dataUsingEncoding:NSUTF8StringEncoding]  name:@"credence"];
-        [formData appendPartWithFormData:[_code dataUsingEncoding:NSUTF8StringEncoding] name:@"code"];
+        [formData appendPartWithFormData:[wauthType dataUsingEncoding:NSUTF8StringEncoding] name:@"authType"];
+        [formData appendPartWithFormData:[wcredence dataUsingEncoding:NSUTF8StringEncoding]  name:@"credence"];
+        [formData appendPartWithFormData:[wcode dataUsingEncoding:NSUTF8StringEncoding] name:@"code"];
     };
 }
 @end

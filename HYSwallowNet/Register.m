@@ -53,23 +53,32 @@
 }
 
 - (AFConstructingBlock)constructingBodyBlock {
+    
+    __typeof__(_userName) __weak wuserName = _userName;
+    __typeof__(_code) __weak wcode = _code;
+    __typeof__(_password) __weak wpassword = _password;
+    __typeof__(_phone) __weak wphone = _phone;
+    __typeof__(_email) __weak wemail = _email;
+    __typeof__(_nickName) __weak wnickName = _nickName;
+    __typeof__(_gender) __weak wgender = _gender;
+    
     return ^(id<AFMultipartFormData> formData) {
-        [formData appendPartWithFormData:[_userName dataUsingEncoding:NSUTF8StringEncoding] name:@"userName"];
-        [formData appendPartWithFormData:[_code dataUsingEncoding:NSUTF8StringEncoding]  name:@"code"];
-        [formData appendPartWithFormData:[_password dataUsingEncoding:NSUTF8StringEncoding] name:@"passeord"];
-        if (_phone) {
-            [formData appendPartWithFormData:[_phone dataUsingEncoding:NSUTF8StringEncoding] name:@"phone"];
+        [formData appendPartWithFormData:[wuserName dataUsingEncoding:NSUTF8StringEncoding] name:@"userName"];
+        [formData appendPartWithFormData:[wcode dataUsingEncoding:NSUTF8StringEncoding]  name:@"code"];
+        [formData appendPartWithFormData:[wpassword dataUsingEncoding:NSUTF8StringEncoding] name:@"passeord"];
+        if (wphone) {
+            [formData appendPartWithFormData:[wphone dataUsingEncoding:NSUTF8StringEncoding] name:@"phone"];
         }
         
-        if (_email) {
-            [formData appendPartWithFormData:[_email dataUsingEncoding:NSUTF8StringEncoding] name:@"email"];
+        if (wemail) {
+            [formData appendPartWithFormData:[wemail dataUsingEncoding:NSUTF8StringEncoding] name:@"email"];
         }
         
-        if (_nickName) {
-            [formData appendPartWithFormData:[_nickName dataUsingEncoding:NSUTF8StringEncoding] name:@"nickName"];
+        if (wnickName) {
+            [formData appendPartWithFormData:[wnickName dataUsingEncoding:NSUTF8StringEncoding] name:@"nickName"];
         }
-        if (_gender) {
-            [formData appendPartWithFormData:[_gender dataUsingEncoding:NSUTF8StringEncoding] name:@"gender"];
+        if (wgender) {
+            [formData appendPartWithFormData:[wgender dataUsingEncoding:NSUTF8StringEncoding] name:@"gender"];
         }
     };
 }
